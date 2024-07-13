@@ -1,0 +1,561 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* dimentions */
+    --header-height: 7rem;
+    --footer-height: 9rem;
+    /* colours */
+    --text: #4a3621;
+    --text-btn: #87623b;
+    --main-bgd: #F7DCB9;
+    --main-bgd2: #e7cba5;
+
+    --green: #B5C18E;
+}
+
+html {
+    font-size: 62.5%;
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--main-bgd);
+}
+
+/* default settings for sections and text parts */
+section {
+    width: 100%;
+    min-height: calc(100vh - var(--header-height) + 1rem);
+    position: relative;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 4rem;
+    margin: 3rem 0 2.5rem 0;
+}
+
+h3 {
+    font-size: 2.5rem;
+    margin: 1.8rem 0 0.3rem 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.center-page {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* default link settings */
+#header a,
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
+}
+
+#header a:hover,
+footer a:hover {
+    background-color: rgba(128, 128, 128, 0.111);
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+
+/* this applies to the products header as well */
+header {
+    background-color: var(--green);
+}
+
+/* Settings for header - banner */
+#header {
+    width: 100%;
+    height: var(--header-height);
+    padding: 1rem 5rem;
+
+    font-size: 4rem;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+#header .logo {
+    border: 1px solid var(--text);
+    padding: 0 1rem;
+    border-radius: 4rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .logo-icon {
+    font-size: 3rem;
+    display: inline-block;
+}
+
+#header #nav-bar {
+    list-style-type: none;
+    font-size: 2.5rem;
+    max-width: 80rem;
+    min-width: 20rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5rem;
+}
+
+#header #nav-bar a[href="#How-it-works"] {
+    line-height: calc(var(--header-height) / 3.1);
+}
+
+/* LOGO Genral Settings */
+.logo>.logo-name {
+    font-family: "Dancing Script", cursive;
+    font-size: inherit;
+}
+
+.logo .fas.fa-seedling {
+    font-size: inherit;
+}
+
+
+main {
+    width: 100%;
+    padding: 0 5rem 5rem 5rem;
+
+    font-size: 2.5rem;
+    background: linear-gradient(45deg,
+            var(--main-bgd) 0%,
+            var(--main-bgd2) 33%,
+            var(--main-bgd)) 50%;
+}
+
+/* newsletter with email input section */
+#Newsletter {
+    margin: auto;
+}
+
+form {
+    margin: auto;
+    text-align: center;
+    width: 60rem;
+    font-size: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+form input {
+    /* this selects #email and #submit */
+    height: 3.8rem;
+    display: inline-block;
+    border-color: var(--text);
+}
+
+form #email {
+    width: 69%;
+    padding-left: 2rem;
+}
+
+form #submit {
+    width: 25%;
+}
+
+
+/* buttons settings */
+.btn {
+    background-color: var(--green);
+    color: var(--text-btn);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #c5df71;
+    transition: background-color 0.8s, color 0.8s;
+    color: var(--text);
+    cursor: pointer;
+}
+
+
+/* settings for the central list section */
+#List-good-stuff>div {
+    width: 80%;
+    border: 1px solid var(--text);
+    border-radius: 5rem;
+    margin: 0 auto;
+    padding: 0 2rem 3rem 2.5rem;
+}
+
+#List-good-stuff h2 {
+    text-align: center;
+}
+
+#List-good-stuff p {
+    margin-left: calc(2.5rem + 1rem);
+    font-size: 2rem;
+}
+
+#List-good-stuff ul {
+    margin-top: 2rem;
+}
+
+#List-good-stuff ul li {
+    margin: 3rem 0;
+}
+
+#List-good-stuff .icon {
+    width: 2.5rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+/* settings for the videos section */
+#How-it-works>div {
+    width: 100%;
+    margin: 0;
+    padding: var(--header-height) 0;
+}
+
+#How-it-works #videos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+#How-it-works #videos-container>div {
+    /* this one selects the singe video box */
+    display: inline-block;
+    width: 56rem;
+    height: 31.5rem;
+}
+
+
+
+/* settings for the products selection section */
+#Products>div {
+    width: 100%;
+    margin: 10rem 0;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
+    align-content: center;
+}
+
+#Products h2 {
+    text-align: center;
+    margin-bottom: 10rem;
+}
+
+#Products #Products-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    gap: calc((100% - 25rem * 4) / 4);
+}
+
+#Products #Products-container>span {
+    /* this one selects the single product box */
+    display: inline-block;
+    width: 25rem;
+    height: 35rem;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#Products-container header {
+    display: block;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+#Products-container h3 {
+    font-size: 3.5rem;
+}
+
+#Products-container p {
+    margin: 3rem 1rem;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+#Products-container .btn {
+    padding: 0.5rem 1.5rem;
+}
+
+
+
+/* bottom dark banner */
+footer {
+    width: 100%;
+    height: var(--footer-height);
+
+    background-color: var(--text);
+    color: var(--green);
+    font-size: 1.5rem;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+
+/* info container */
+footer>div {
+    width: 100rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: end;
+
+    gap: 1rem;
+
+    position: absolute;
+    right: 5rem;
+}
+
+footer ul {
+    width: 20rem;
+    list-style-type: none;
+    font-size: 2.2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+    gap: 1rem;
+}
+
+footer .logo {
+    padding: 0 0.5rem;
+    border-radius: 2rem;
+    background-color: var(--green);
+    color: var(--text);
+}
+
+
+
+
+@media only screen and (max-width: 1280px) {
+    html {
+        font-size: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 1230px) {
+    html {
+        font-size: 60%;
+    }
+
+    #How-it-works #videos-container>div {
+        /* this one selects the singe video box */
+        display: inline-block;
+        width: calc(56rem / 1.1);
+        height: calc(31.5rem / 1.1);
+    }
+
+}
+
+@media only screen and (max-width: 1130px) {
+    html {
+        font-size: 50%;
+    }
+
+    #How-it-works #videos-container>div {
+        /* this one selects the singe video box */
+        display: inline-block;
+        width: calc(56rem / 1.1);
+        height: calc(31.5rem /1.1);
+    }
+}
+
+
+@media only screen and (max-width: 890px) {
+
+    #How-it-works #videos-container>div {
+        /* this one selects the singe video box */
+        display: inline-block;
+        width: calc(56rem / 1.2);
+        height: calc(31.5rem / 1.2);
+    }
+
+    #Products h2 {
+        margin: 1rem 0 2rem;
+    }
+
+    #Products #Products-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        flex-wrap: wrap;
+        gap: 2rem calc((100% - 25rem * 3) / 3);
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    html {
+        font-size: 45%;
+    }
+
+    #Products #Products-container {
+        gap: 2rem calc((100% - 25rem * 2) / 2);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    #header #nav-bar {
+        text-align: center;
+        min-width: none;
+        gap: 2.3rem;
+    }
+
+    #header .logo {
+        min-width: fit-content;
+        margin-right: 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    #header {
+        padding: 1rem 2.5rem;
+    }
+
+    #header #nav-bar {
+        text-align: center;
+        min-width: none;
+        gap: 1rem;
+    }
+
+    main {
+        width: 100%;
+        padding: 0 2.5rem 2.5rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 38%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    html {
+        width: 100wh;
+        font-size: 30%;
+    }
+
+    :root {
+        --header-width: 8rem;
+        --footer-height: 8rem;
+    }
+
+    #header {
+        width: 100%;
+        padding: 0.8rem 1rem;
+    }
+
+    #header .logo {
+        font-size: 3rem;
+    }
+
+    #header #nav-bar {
+        min-width: none;
+        gap: 0.8rem;
+    }
+
+
+
+    main {
+        width: 100%;
+        padding: 0 1rem 1rem 1rem;
+    }
+
+
+    form>div {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+        /* align-content: center; */
+
+        border-color: var(--text);
+    }
+
+    form input {
+        height: 6rem;
+    }
+
+    form #email {
+        text-align: center;
+        width: 75%;
+        padding-left: 2rem;
+    }
+
+    form #submit {
+        width: 35%;
+    }
+
+    #Products>div {
+        min-height: calc(100vh - var(--header-height) - var(--footer-height));
+
+    }
+
+    #Products {
+        margin-bottom: 3rem;
+    }
+
+    #Products .btn {
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+    footer {
+        height: var(--footer-height);
+        font-size: 1rem;
+    }
+
+    footer ul {
+        font-size: 1.75rem;
+    }
+}
+
+/* problemi sotto i 300px--> si vede male per i cellulari */

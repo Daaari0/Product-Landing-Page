@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playwrite+HR:wght@100..400&display=swap"
+        rel="stylesheet">
+
+    <!-- fa fab icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+
+    <title>Cool Company - Landing Page</title>
+</head>
+
+<body>
+    <header id="header">
+        <!-- FIXED header for company-logo and navigation -->
+        <div class="logo">
+            <span class="logo-icon">
+                <i class="fas fa-seedling"></i>
+            </span>
+            <span class="logo-name">Cool Company</span>
+        </div>
+
+        <nav id="nav-bar">
+            <a class="nav-link" href="#Newsletter">Newsletter</a>
+            <a class="nav-link" href="#How-it-works">How it works</a>
+            <a class="nav-link" href="#Products">Products</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Newsletter">
+            <form id="form" class="center-page" action="#">
+                <!-- email and get updated button -->
+                <label for="email">Interested in the newsletter? <br> Stay updated with a monthly email!</label>
+                <div>
+                    <input id="email" name="email" type="email" placeholder="email@example.com">
+                    <input id="submit" class="btn" type="submit" value="Let's go!">
+                </div>
+            </form>
+        </section>
+
+        <section id="List-good-stuff">
+            <div class="center-page">
+                <h2>List of good stuff</h2>
+                <ul>
+                    <li>
+                        <div>
+                            <i class="icon fas fa-leaf"></i>
+
+                            <h3>Greenest Trees</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, suscipit fugiat dicta
+                            fugit
+                            optio porro quas velit. </p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon fas fa-temperature-low"></i>
+
+                            <h3>Cleanest Air</h3>
+                        </div>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, perspiciatis. Similique,
+                            aperiam
+                            optio. Itaque modi numquam architecto ratione debitis corporis harum! </p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class="icon fas fa-wind"></i>
+                            <h3>Normal Global Temperature</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </li>
+                    <li>
+                        <div>
+                            <i class='icon fas fa-dragon'></i>
+                            <h3>Terrific Biodiversity</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, repellat enim illum
+                            aliquam
+                            perspiciatis ipsa. </p>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section id="How-it-works">
+            <div>
+
+                <h2>How does it work?</h2>
+
+                <div id="videos-container">
+                    <div>
+                        <iframe id="video" width="100%" height="100%"
+                            src="https://www.youtube.com/embed/vaW095z4AiM?si=f2VeYRYXlpY-eFm7"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <!-- width="560" height="315" -->
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/H4FGjZ1OHr4?si=gfonsqkCOxWYSnc1"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <div>
+                        <iframe width="100%" height="100%"
+                            src="https://www.youtube.com/embed/JQHtjT-_c7U?si=Wp2xJU09WAqIs5zP"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="Products">
+            <div>
+                <h2>Our best products:</h2>
+                <div id="Products-container">
+                    <span>
+                        <header>Plant a Tree</header>
+                        <h3>600£</h3>
+                        <p>Lorem ipsum dolor sit, <br> amet consectetur <br> adipisicing elit.</p>
+                        <input class="btn" type="button" value="Select">
+                    </span>
+                    <span>
+                        <header>Tree & Flower</header>
+                        <h3>630£</h3>
+                        <p>Lorem ipsum dolor sit, <br> amet consectetur <br> adipisicing elit.</p>
+                        <input class="btn" type="button" value="Select">
+                    </span>
+                    <span>
+                        <header>Plant 5 Trees</header>
+                        <h3>710£</h3>
+                        <p>Lorem ipsum dolor sit, <br> amet consectetur <br> adipisicing elit.</p>
+                        <input class="btn" type="button" value="Select">
+                    </span>
+                    <span>
+                        <header>Full Forest</header>
+                        <h3>15500£</h3>
+                        <p>Lorem ipsum dolor sit, <br> amet consectetur <br> adipisicing elit.</p>
+                        <input class="btn" type="button" value="Select">
+                    </span>
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- privacy policy and other links -->
+        <div>
+            <ul>
+                <li><a href="#">Privacy</a> </li>
+                <li> <a href="#">Terms</a> </li>
+                <li><a href="#">Contacts</a> </li>
+            </ul>
+
+            <div id="Copyright">
+                Copyright 2024, <span class="logo">
+                    <span class="logo-icon">
+                        <i class="fas fa-seedling"></i>
+                    </span>
+                    <span class="logo-name">Cool Company</span>
+                </span>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
